@@ -1,0 +1,13 @@
+<div class="col-3-4" id='one'>
+  <div class='filler' ng-click="Article.selectArticle(0)"></div>
+
+  <div class="article no-hover" ng-click="Article.forward()">
+    <a href>
+    <img ng-src="{{Article.articles[Article.show].image}}" class="animate-img" fadeIn/>
+    <div class='text'>
+      <h3>{{Article.articles[Article.show].synopsis}}</h3>
+    </div>
+    </a>
+  </div>
+
+</div>

@@ -1,0 +1,7 @@
+section#footer {
+  height: 200px;
+  text-align: center;
+}
+section#footer p.links span {
+  margin: 0% 1%;
+}

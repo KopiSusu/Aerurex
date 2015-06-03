@@ -1,0 +1,76 @@
+#navbar {
+  font-family: 'super';
+  width: 100%;
+  z-index: 100;
+  background: #fafafa;
+}
+#navbar .links span{
+  margin: 1% 10% 0% 0%;
+  cursor: pointer;
+  /*float: right;*/
+}
+#navbar p.links.inline {
+  width: 25%;
+  /*float: right;*/
+  font-size: 1.5vw;
+  display: inline-flex;
+}
+#navbar p.links.inline a{
+  text-decoration: none;
+  color:inherit;
+}
+
+#navbar h3 {
+  margin: 1.5% 2% 0% 2%;
+  font-size: 3vw;
+  font-family: 'Anime', sans-serif;
+  /*float: right;*/
+  color: #444;
+}
+
+#navbar h3 span.fancy {
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+#navbar div.contact {
+  display: inline-block;
+  width: 15%;
+  right: 0;
+  font-size: 1.2em;
+  margin-left: -1.5%;
+  cursor: pointer;
+}
+#navbar div.contact input {
+  border-bottom: #9b9b9b;
+  width: 100%;
+  font-family: 'Anime', sans-serif;
+  font-size: 1em;
+  color: #444;
+  outline: none;
+}
+#navbar div.contact img {
+  height: 80%;
+  width: 30%;
+  opacity: 0.7;
+  margin: 4% -5%;
+}
+#navbar div.contact img:first-of-type {
+  height: 80%;
+  width: 25%;
+  margin: 6% 2% 7% 0%;
+}
+
+@media all and (max-width: 900px), screen and (max-device-width: 900px) {
+  #navbar div.contact {
+    display: none;
+  }
+  #navbar p.links.inline {
+    width: 50%;
+    float: left;
+    font-size: 4.5vw;
+  }
+  #navbar h3 {
+    margin: 3.7% 2% 1% 2%;
+    font-size: 6vw;
+  }
+}

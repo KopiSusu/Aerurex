@@ -1,0 +1,51 @@
+@font-face{
+    font-family: "Quicksand";
+    src: url('../fonts/quicksand/quicksand-regular.otf');
+}
+@font-face{
+  font-family: "Anime";
+  src: url('../fonts/anime-ace/animeace.ttf');
+}
+@font-face{
+  font-family: "Kraftstoff";
+  src: url('../fonts/Kraftstoff-regular.otf');
+}
+@font-face{
+  font-family: "Super";
+  src: url('../fonts/minya-nouvelle/minya nouvelle rg.ttf');
+}
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body, html {
+  margin: 0%;
+  padding: 0%;
+  height: 100%; 
+  color: #9b9b9b;
+  background: #fafafa;
+    min-height: 1000px;
+}
+img {
+  width: 100%;
+  background-position: center; 
+}
+
+.container {
+  width: 100%;
+}
+.inline {
+  display: inline-block;
+}
+
+span.thin {
+  font-weight: 100;
+}
+span.grey {
+  opacity: 0.7;
+}
+span.color {
+  color: #8A0707;
+}

@@ -1,0 +1,48 @@
+
+articles-all {
+  -webkit-transform: rotatey(0deg);
+  -webkit-backface-visibility: hidden ;
+}
+
+articles-all.ng-hide-add.ng-hide-add-active,
+articles-all.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+articles-all.ng-hide {
+  -webkit-transform: rotatey(-180deg);
+  -webkit-backface-visibility: hidden ;
+}
+
+articles-show {
+  -webkit-transform: rotatey(0deg);
+  -webkit-backface-visibility: hidden ;
+}
+
+articles-show.ng-hide-add.ng-hide-add-active,
+articles-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+articles-show.ng-hide {
+  -webkit-transform: rotatey(-180deg);
+  -webkit-backface-visibility: hidden ;
+}
+
+input {
+  -webkit-transform: rotatey(0deg);
+  -webkit-backface-visibility: hidden ;
+}
+
+input.ng-hide-add.ng-hide-add-active,
+input.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+input.ng-hide {
+  -webkit-transform: rotatey(-180deg);
+  -webkit-backface-visibility: hidden ;
+}

@@ -1,0 +1,22 @@
+<section class='container'>
+  <section class='grid'>
+
+    <articles-all ng-show='Article.isSelected(0)' ></articles-all>
+
+    <articles-show ng-show='Article.isSelected(0) == false' ></articles-show>
+
+    <div class="sidebar">
+      <h2> AE<span class='thin'>R<span class='color'>U</span>REX</span> </h2>
+
+      <div id='main-blurb' ng-show='Article.isSelected(0)'>
+        <p>Small little blurb exaplinging whatever you want to explain in a small little blurb. <span class='color'>Get some cool different colors going</span>, or maybe something more like <span class='color'>a</span>r<span class='color'>t</span> </p>
+      </div>
+
+      <div id='main-blurb' ng-show='Article.isSelected(0) == false'>
+        <p>{{Article.articles[Article.show].synopsis}}</p>
+      </div>
+
+    </div>
+    
+  </section>
+</section>

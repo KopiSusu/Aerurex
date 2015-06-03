@@ -1,0 +1,226 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.opacity {
+  opacity: 0.5 !important;
+}
+section.grid {
+  width: 100%;
+  padding: 0% 0% 0% 2%;
+  margin-bottom: -20%;
+}
+section.grid div#three {
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px; 
+  text-align:center;
+  position: absolute;
+}
+
+section.grid div#one {
+  -webkit-column-count: 1;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    1;
+  -moz-column-gap:      0px;
+  column-count:         1;
+  column-gap:           0px; 
+  text-align:center;
+  z-index: 1;
+}
+
+section.grid div {
+  display: inline-block;
+  overflow: hidden;
+  opacity: 1;
+  position: relative;
+}
+
+section.grid div div.article {
+  box-shadow: 0px 0px 5px #888888;
+  -webkit-column-count: 1;
+  -moz-column-count:    1;
+  column-count:         1;
+  margin: 3%; 
+  z-index: 1;
+  background: white;
+  -webkit-transition: all 0.6s; 
+  transition: all 0.6s;
+  font-size: 2em;
+}
+
+section.grid div div.article .text h3{
+  font-family: 'super';
+  padding: 0.5vw 10%;
+  text-align: center;
+  color: #444;
+  -webkit-column-count: 1;
+  -moz-column-count:    1;
+  column-count:         1;
+}
+
+section.grid div div.article:hover div.text {
+  display: block;
+  height: 120px;
+  -webkit-column-count: 1;
+  -moz-column-count:    1;
+  column-count:         1;
+}
+
+section.grid div div.article:hover img {
+  margin-top: -10%;
+  margin-bottom: 10%;
+}
+
+section.grid div div.article.no-hover:hover img {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+section.grid div div.article.no-hover:hover div.text {
+  height: 0px;
+}
+
+section.grid div img {
+  margin-top:0%;
+  margin-bottom: 0%;
+  opacity: 1;
+  -webkit-transition: all 0.6s; /* Safari */
+  transition: all 0.6s;
+}
+section.grid div div.article div.text{
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  background: white;
+  bottom: 0px;
+  -webkit-transition: height 0.6s;
+  transition: height 0.6s;
+  -webkit-column-count: 1;
+  -moz-column-count:    1;
+  column-count:         1;
+  left: 0;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-2-3 {
+  width: 65.66%;
+}
+.col-3-4 {
+  width: 75%;
+}
+.col-1-1 {
+  width: 100%%;
+}
+.col-1-2 {
+  width: 48%;
+  margin: 1% 2% 1% 0%;
+}
+.col-1-3 {
+  width: 29.33%;
+  margin: 1% 2%;
+}
+.col-1-4 {
+  width: 23%;
+  margin: 1% 1%;
+}
+.col-1-6 {
+  width: 16.15%;
+}
+.col-1-8 {
+  width: 12.5%;
+}
+.col-1-7 {
+  width: 14.3%;
+}
+
+section.grid div.sidebar {
+  position: absolute;
+  width: 23.5%;
+  margin-left: 0.3%;
+  right: 0;
+  height: 100%;
+  -webkit-column-count: 1;
+  -moz-column-count:    1;
+  column-count:         1;
+}
+
+section.grid div.filler {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+section.grid div.sidebar h2 {
+  font-size: 2em;
+  font-family: 'anime';
+  margin: 5% 0%;
+  text-align: center;
+  color: #444;
+}
+section.grid div.sidebar #main-blurb {
+  position: absolute;
+  margin: 0% 10%;
+  text-align: center;
+  padding: 0% 0%;
+  font-size: 1.3em;
+  overflow: hidden;
+  font-family: 'quicksand';
+  border-top: 1px solid;
+    -webkit-column-count: 1;
+  -moz-column-count:    1;
+  column-count:         1;
+}
+
+
+
+@media all and (max-width: 900px), screen and (max-device-width: 900px) {
+  .col-3-4 {
+    width: 98%;
+    margin: 0% 0% 1% 0%;
+  }
+  .col-1-2 {
+    width: 100%;
+  }
+  section.grid div.sidebar {
+    display: none;
+  }
+  section.grid div div.article {
+    height: 55vh;
+  }
+  section.grid div div.article div.text{
+    font-size: 3vw;
+  }
+  section.grid div div.article .text h3{
+    padding: 2vh 15%;
+  }
+
+  section.grid div div.article div.text {
+    height: 40%;
+    opacity: 0.8;
+  } 
+  section.grid div div.article:hover img {
+    top: 0;
+  }
+}
+@media all and (max-width: 580px), screen and (max-device-width: 580px) {
+  section.grid div div.article {
+    height: 35vh;
+  }
+}
+
+
+
+
+
+
+
