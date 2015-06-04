@@ -47,9 +47,9 @@ section.grid div div.article {
   column-count:         1;
   margin: 3%; 
   z-index: 1;
-  background: white;
-  -webkit-transition: all 0.6s; 
-  transition: all 0.6s;
+  background: #666;
+  -webkit-transition: all 0.4s; 
+  transition: all 0.2s;
   font-size: 2em;
 }
 
@@ -58,51 +58,81 @@ section.grid div div.article .text h3{
   padding: 0.5vw 10%;
   text-align: center;
   color: #444;
+  margin: 6% 0% 0% 0%;
   -webkit-column-count: 1;
   -moz-column-count:    1;
   column-count:         1;
 }
 
+section.grid div div.article .text h5{
+  font-family: 'super';
+  padding: 0.5vw 10%;
+  font-size: 0.6em;
+  text-align: center;
+  color: #444;
+  margin-top: 0;
+  -webkit-column-count: 1;
+  -moz-column-count:    1;
+  column-count:         1;
+}
+
+section.grid div div.article:hover {
+  background: white;
+}
 section.grid div div.article:hover div.text {
-  display: block;
-  height: 120px;
+/*  display: block;
+  height: 120px;*/
+  height: 0;
   -webkit-column-count: 1;
   -moz-column-count:    1;
   column-count:         1;
 }
 
 section.grid div div.article:hover img {
-  margin-top: -10%;
-  margin-bottom: 10%;
-}
-
-section.grid div div.article.no-hover:hover img {
+/*  margin-top: 15%;
+  margin-bottom: -15%;*/
   margin-top: 0%;
   margin-bottom: 0%;
 }
-section.grid div div.article.no-hover:hover div.text {
+
+section.grid div div.article.no-hover img {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+section.grid div div.article.no-hover div.text {
   height: 0px;
+}
+section.grid div div.article.no-hover {
+  background: white;
 }
 
 section.grid div img {
-  margin-top:0%;
-  margin-bottom: 0%;
-  opacity: 1;
-  -webkit-transition: all 0.6s; /* Safari */
-  transition: all 0.6s;
+  margin-top: 15%;
+  margin-bottom: -15%;
+  opacity: 0.9;
+  -webkit-transition: all 0.4s; /* Safari */
+  transition: all 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+  timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
 }
+
 section.grid div div.article div.text{
   position: absolute;
   width: 100%;
-  height: 0px;
+  height: 120px;
   background: white;
-  bottom: 0px;
-  -webkit-transition: height 0.6s;
-  transition: height 0.6s;
+  top: 0px;
+  box-shadow: 0px 0px 5px #888888;
+  -webkit-transition: height 0.4s;
+  transition: height 0.4s;
   -webkit-column-count: 1;
   -moz-column-count:    1;
   column-count:         1;
   left: 0;
+  -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+  timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
 }
 
 .grid:after {
