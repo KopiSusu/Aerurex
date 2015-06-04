@@ -4,17 +4,18 @@
   z-index: 100;
   background: #fafafa;
 }
+
 #navbar .links span{
   margin: 1% 10% 0% 0%;
   cursor: pointer;
-  /*float: right;*/
 }
+
 #navbar p.links.inline {
   width: 25%;
-  /*float: right;*/
   font-size: 1.5vw;
   display: inline-flex;
 }
+
 #navbar p.links.inline a{
   text-decoration: none;
   color:inherit;
@@ -24,7 +25,6 @@
   margin: 1.5% 2% 0% 2%;
   font-size: 3vw;
   font-family: 'Anime', sans-serif;
-  /*float: right;*/
   color: #444;
 }
 
