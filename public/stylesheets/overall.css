@@ -1,19 +1,23 @@
 @font-face{
     font-family: "Quicksand";
-    src: url('../fonts/quicksand/quicksand-regular.otf');
+    src: url('../fonts/quicksand/Quicksand-regular.otf');
 }
+
 @font-face{
   font-family: "Anime";
   src: url('../fonts/anime-ace/animeace.ttf');
 }
+
 @font-face{
   font-family: "Kraftstoff";
   src: url('../fonts/Kraftstoff-regular.otf');
 }
+
 @font-face{
   font-family: "Super";
   src: url('../fonts/minya-nouvelle/minya nouvelle rg.ttf');
 }
+
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 body {
   margin: 0;
