@@ -26,24 +26,24 @@
     };
   });
 
-  app.directive('articlesPage', function() {
+  app.directive('comicsPage', function() {
     return {
       restrict: 'E',
-      templateUrl: 'views/articles-page.html'
+      templateUrl: 'views/comics-page.html'
     };
   });
 
-  app.directive('articlesAll', function() {
+  app.directive('comicsAll', function() {
     return {
       restrict: 'E',
-      templateUrl: 'views/articles-all.html'
+      templateUrl: 'views/comics-all.html'
     };
   });
 
-  app.directive('articlesShow', function() {
+  app.directive('comicsShow', function() {
     return {
       restrict: 'E',
-      templateUrl: 'views/articles-show.html'
+      templateUrl: 'views/comics-show.html'
     };
   });
 

@@ -1,0 +1,52 @@
+section.container section.grid div#featured {
+  width: 100%;
+  height: 100%;
+    padding-right: 2%;
+}
+
+section.container section.grid div#featured div{
+  vertical-align: text-top;
+  box-shadow: 0px 0px 5px #888888;
+  width: 31.33%;
+  margin: 1% 1%;
+  height: 450px;
+}
+
+section.container section.grid div#featured div div.top{
+  top: 0;
+    box-shadow: 0px 0px 5px #888888;
+    margin: 0;
+  width: 100%;
+  height: 20%;
+  background: white;
+  font-family: 'super';
+  padding: 0.5vw 10%;
+  font-size: 1.5em;
+  text-align: center;
+    position: absolute;
+  z-index: 10;
+}
+section.container section.grid div#featured div div.bottom{
+  bottom: 0;
+    box-shadow: 0px 0px 5px #888888;
+  margin: 0;
+  background: white;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+}
+
+section.container section.grid div#featured div img{
+  opacity: 0.9;
+  margin-top: 0;
+}
+
+section.container section.grid div#featured div:nth-of-type(1) {
+  background: #e74c3c;
+}
+section.container section.grid div#featured div:nth-of-type(2) {
+  background: #3498db;
+}
+section.container section.grid div#featured div:nth-of-type(3) {
+  background: #52be7f;
+}

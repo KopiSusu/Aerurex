@@ -1,0 +1,32 @@
+<section class='container'>
+  <section class='grid'>
+
+    <div class="col-3-4" id='one'>
+      <div class='filler'><a href='#comics' ng-click="Comic.selectComic(0)"></div>
+
+      <div class="article no-hover" ng-click="Comic.forward()">
+        <a href='#/comics/{{Comic.show}}'>
+        <img ng-src="{{Comic.comics[Comic.show].image}}" class="animate-img" fadeIn/>
+        <div class='text'>
+          <h3>{{Comic.comics[Comic.show].synopsis}}</h3>
+        </div>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="sidebar">
+      <h2> AE<span class='thin'>R<span class='color'>U</span>REX</span> </h2>
+
+      <div id='main-blurb' ng-show='Comic.isSelected(0)'>
+        <p>Small little blurb talking about you/whatever it is you would like to mention. <span class='color'>Get some cool different colors going</span></p>
+      </div>
+
+      <div id='main-blurb' ng-show='Comic.isSelected(0) == false'>
+        <p>{{Comic.comics[Comic.show].synopsis}}</p>
+      </div>
+
+    </div>
+    
+  </section>
+</section>

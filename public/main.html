@@ -6,6 +6,7 @@
     <base href='/'>
     
     <link rel='stylesheet' href='stylesheets/overall.css' />
+    <link rel='stylesheet' href='stylesheets/landing.css' />
     <link rel='stylesheet' href='stylesheets/nav.css' />
     <link rel='stylesheet' href='stylesheets/footer.css' />
     <link rel='stylesheet' href='stylesheets/animations.css' />
@@ -16,10 +17,9 @@
 
   <body ng-controller='MainController as Main'>
   
-    <div class='container' ng-controller='ArticleController as Article'>
+    <div class='container' ng-controller='ComicController as Comic'>
       <nav-bar></nav-bar>
-      <landing-page ng-show='Main.isSelected(1)'></landing-page>
-      <article-show ng-show='Main.isSelected(2)'></article-show>
+      <div ng-view></div>
     </div>
 
     <script src='lib/jquery/dist/jquery.min.js'></script>

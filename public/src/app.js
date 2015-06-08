@@ -12,35 +12,52 @@
     };
   })
 
-  app.controller('ArticleController', ['$http', function($http) {
-    this.currentarticle = 0;
+  app.config(['$routeProvider',
+  function($routeProvider) {
+    $routeProvider.
+      when('/comics', {
+        templateUrl: 'views/comics-page.html',
+        controller: 'ComicController'
+      }).
+      when('/comics/:Id', {
+        templateUrl: 'views/comics-show.html',
+        controller: 'ComicController'
+      }).
+      when('/', {
+        templateUrl: 'views/landing-page.html',
+        controller: 'ComicController'
+      }).
+      otherwise({
+        redirectTo: '/'
+      });
+  }]);
+
+  app.controller('ComicController', ['$http', '$routeParams', function($http, $routeParams) {
+    this.currentcomic = 0;
     this.show = 0;
     this.search = false;
-
-    // .toDataURL() 
-    // store images as string in local csv file, then use canvas to redraw it?gb
+    this.show = $routeParams.Id;
 
     var content = this; 
-    content.allarticles = [];
-    content.articles = [];
+    content.comics = [];
 
     $http.get('src/data.json').success(function(data) {
-      content.articles = data;
-      content.allarticles = data;
+      content.comics = data;
+      content.featured = data.slice(0, 3);
     });
 
-    this.selectArticle = function(setArticle) {
-      this.currentarticle = setArticle;
-      this.show = setArticle - 1;
+    this.selectComic = function(setComic) {
+      this.currentcomic = setComic;
+      this.show = setComic - 1;
       this.hide = true;
     };
  
-    this.isSelected = function(checkArticle) {
-      return this.currentarticle === checkArticle;
+    this.isSelected = function(checkComic) {
+      return this.currentcomic === checkComic;
     };
 
     this.forward = function() {
-      if(this.show > this.articles.length - 2) {
+      if(this.show > this.comics.length - 2) {
         this.show = 0;
       } else {
         this.show++;

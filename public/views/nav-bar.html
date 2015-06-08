@@ -1,14 +1,13 @@
 <section id='navbar'>
   <h3 class='inline'><span class='color thin fancy'>&</span>AERUREX</h3>
   <p class='links inline'>
-    <span><a href ng-click='Main.selectTab(1)'>Home</a></span>
-    <span>About</span>
+    <span><a href="#/" ng-click='Main.selectTab(1)'>Home</a></span>
+    <span><a href="#comics" ng-click='Main.selectTab(2); Comic.selectComic(0)'>Comics</a></span>
     <span>Contact</span>
-    <span ng-click="Article.toggle()">Search</span>
+    <span ng-click="Comic.toggle()">Search</span>
   </p>
   <div class='contact'> 
-  <!-- <img ng-src=" ../images/pinwheel.png"/> -->
-    <input ng-model="query" ng-show="Article.search == true">
+    <input ng-model="query" ng-show="Comic.search == true">
   </div>
 </section>
 

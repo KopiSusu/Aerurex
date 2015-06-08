@@ -1,1 +1,15 @@
-  <articles-page></articles-page>
+<section class='container'>
+  <section class='grid'>
+    <div id='featured'>
+      <div class='col-1-3' ng-repeat='featured in Comic.featured'>
+        <div class='top'>
+          <h3>{{featured.title}}</h3>
+        </div>
+        <img ng-src="{{featured.image}}"/>
+        <div class='bottom'>
+          <h5><span class='color'>View</span></h5>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
